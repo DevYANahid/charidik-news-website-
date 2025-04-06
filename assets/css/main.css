@@ -1,0 +1,158 @@
+.nav-item a{
+    font-family: url(../SutonnyMJ/SutonnyOMJ.ttf);
+    color: #000000 !important;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s linear;
+    text-decoration: none;
+
+}
+
+
+
+  .search-input {
+    width: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    padding: 0;
+  }
+
+  .search-active {
+    width: 200px; /* ইনপুটের সাইজ সেট করুন */
+    opacity: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .second_header{
+    background-color: #fae6e6;
+  }
+
+  .second_header_menu a{
+    font-family: url(../SutonnyMJ/SutonnyOMJ.ttf);
+    color: #000000 !important;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+
+  .containers{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+  .first_card{
+    margin-left: 20px;
+  }
+  .card {
+    border: none;
+    
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card_img {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 0 0 12px;
+}
+
+.card_img img {
+  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+    transition: transform 0.3s ease;
+}
+
+.card_img img:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .first_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .first_card .card {
+      width: 100% !important;
+      max-width: 100% !important;
+  }
+
+  .card_img img {
+      width: 100% !important;
+      height: auto !important;
+  }
+
+  .card-body {
+      text-align: center;
+  }
+
+  .containers {
+      display: flex;
+      justify-content: center;
+  }
+
+  .containers .card {
+      width: 100% !important;
+      max-width: 80% !important;
+  }
+
+  .row .col-md-2 {
+      width: 50%;
+      margin: auto;
+  }
+
+  .row .col-md-1 {
+      width: 100%;
+      text-align: center;
+  }
+
+  .img_ad {
+      width: 100% !important;
+      height: auto !important;
+  }
+}
