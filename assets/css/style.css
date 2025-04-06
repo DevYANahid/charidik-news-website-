@@ -10392,3 +10392,14 @@ h6{ font-size: 12px !important; line-height: 16px !important; font-weight: bolde
 .h5color {
     color: #000;
 }
+
+
+.card_img{  
+    height: 260px !important;
+}
+
+@media (max-width: 1268px) {
+    .card_img{  
+        height: 300px !important;
+    }
+}
