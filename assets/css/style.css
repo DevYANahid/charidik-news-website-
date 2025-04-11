@@ -180,6 +180,10 @@ body {
     border-radius: 5px;
 }
 
+.position-relative .title {
+    color: #fff !important;
+}
+
 #bodymenu_leadRightimg .sub-news span.imgWrep img,
 #bodymenu_leadRightimg .subMore-news span.imgWrep img {
     border-radius: 5px;
