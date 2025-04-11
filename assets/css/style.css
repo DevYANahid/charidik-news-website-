@@ -10403,3 +10403,109 @@ h6{ font-size: 12px !important; line-height: 16px !important; font-weight: bolde
         height: 300px !important;
     }
 }
+
+/* jatio style */
+
+    .visited-news{color: #0573e6 !important;}
+    
+    .cat_lead h5.title{
+        font-size: 1.75rem;
+        font-weight: bold;
+        padding: 10px 0px 7px 0;
+        line-height: 34px;
+    }
+
+    .cat_lead div.summery{
+        font-size: 1rem;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .cat_sub_lead h5.title{
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 7px 0 0 0;
+        margin-bottom:0px;
+    }
+
+    .catsubMoremedianews #img{width: 250px;overflow: hidden;}
+    .catsubMoremedianews .sum{
+        font-weight: normal;
+        font-size: 1rem;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+        overflow: hidden;
+    }
+
+    .catsub_featured img{
+        height: 150px;
+        width: auto;
+    }
+    .catsub_featured_photo img{
+        height: 160px;
+        width: auto;
+    }
+    .catsub_featured .content_title h2{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .cat_lead_all{
+        border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    }
+    .news-cover-box{background:#f7f8fa;box-shadow: 0 -5px 4px -6px #6c757d;padding: 15px 0;}
+    .without_sub{margin-bottom:0px;padding-bottom:3px !important;border-bottom: 0px}
+    .fix-height{ height: 22px;}
+    .country_menu li a.first{font-size:25px;color: #1a73e8;}
+    .country_menu{margin-top: 12px;border-bottom: 2px solid #ccc;
+    padding-bottom: 10px}
+    .catsubMoremedianews a:hover .sum{color:#000 !important}
+    .cat_lead .sholder{
+        color:#fff !important;
+    }
+    .cat_sub_lead .sholder{
+        color:#fff !important;
+    }
+    .catsub-arrow a{border: 2px solid #000;display: block;margin-right: 0;
+    border-radius: 50%;
+    padding: 5px 6px !important;
+    font-size: 15px !important;
+    color: #333;}
+    .catsub-arrow i{font-size: 15px;margin-right: 0px;color: #000;font-weight:bold}
+    
+
+
+  
+    .morebtn{
+        display: inline-block;
+        font-size:18px; padding: 5px 10px; background: #fff;color: #0573e6; 
+        cursor:pointer; border: 1px solid #0573e6; border-radius: 5px
+    }
+    .morebtn:hover{
+        color: #0573e6 !important;
+    }
+    
+
+    /* -- Black text & hover style  */
+    
+      body,
+      .title,
+      .sum,
+      .fw-bold,
+      .link,
+      a,
+      p,
+      h5 {
+        color: black !important;
+      }
+  
+      .title:hover {
+        color: black !important;
+        text-decoration: underline;
+      }
+    
+ 
