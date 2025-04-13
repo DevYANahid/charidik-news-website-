@@ -10636,3 +10636,41 @@ h6{ font-size: 12px !important; line-height: 16px !important; font-weight: bolde
      box-shadow: none !important;
      transition: none !important;
    }
+/* youtube video icon style like fb,whatsapp*/
+
+/* Add smooth hover effect on icons */
+.d-flex.gap-3 a i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover colors and jumping effect for each icon */
+.d-flex.gap-3 a:hover i.fa-facebook-f {
+  color: #1877f2; /* Facebook Blue */
+  transform: translateY(-10px) scale(1.2); /* Jump and enlarge */
+}
+
+.d-flex.gap-3 a:hover i.fa-linkedin-in {
+  color: #0a66c2; /* LinkedIn Blue */
+  transform: translateY(-10px) scale(1.2); /* Jump and enlarge */
+}
+
+.d-flex.gap-3 a:hover i.fa-whatsapp {
+  color: #25d366; /* WhatsApp Green */
+  transform: translateY(-10px) scale(1.2); /* Jump and enlarge */
+}
+
+.d-flex.gap-3 a:hover i.fa-twitter {
+  color: #1da1f2; /* Twitter Blue */
+  transform: translateY(-10px) scale(1.2); /* Jump and enlarge */
+}
+
+.d-flex.gap-3 a:hover i.fa-facebook-messenger {
+  color: #0084ff; /* Messenger Blue */
+  transform: translateY(-10px) scale(1.2); /* Jump and enlarge */
+}
+
+/* Optional: Space out icons a bit more */
+.d-flex.gap-3 a {
+  font-size: 2rem; /* Adjust icon size */
+  text-decoration: none;
+}
