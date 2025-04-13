@@ -10529,4 +10529,106 @@ h6{ font-size: 12px !important; line-height: 16px !important; font-weight: bolde
         text-decoration: underline;
       }
     
+ /* ......bissho style start............ */
+ 
+ /* - End Google Tag Manager (noscript)  */
+ 
+ .popup_div_whiteoverlay,.popup_div_blackoverlay{position: fixed; display: none; left: 0; top: 0; width: 100%; height: 100%; _background: #000; _opacity: 0.8; z-index: 9999999999998}
+ .popup_div_whiteoverlay{width: 600px; left: 26%; top: -600px; height: 80%; text-align: center; background: none; opacity: 1.0; z-index: 9999999999999; transition: all 0.4s; -moz-transition: all 0.4s; -webkit-transition: all 0.4s;}
+ .popup_div_whiteoverlay .popup_img{ position:relative; margin: auto; display: inline-block; text-align: center;}
+ .popup_div_whiteoverlay .popup_img img{_max-width: 80%; _max-height: 80%; text-align: center}
+ .popup_div_whiteoverlay .popup_div_close_btn{position: absolute; top: -20px; right: -50px; z-index: 10000; border: 5px solid #666; width: 40px; height: 40px; text-align: center; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; color: #fff; background: #555; cursor: pointer
+ }
+ .popup_div_whiteoverlay .popup_div_close_btn span{position: relative; top: 11%; font-weight: bold}
+ .popup_div_close_btn{display:block}
+
+ 
+        .cat_lead h5.title{
+            font-size: 1.75rem;
+            font-weight: bold;
+            padding: 10px 0px 7px 0;
+            line-height: 34px;
+        }
+    
+        .cat_lead div.summery{
+            font-size: 1rem;
+            -webkit-line-clamp: 4;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-align: justify;
+            overflow: hidden;
+        }
+    
+        .cat_sub_lead h5.title{
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 7px 0 0 0;
+            margin-bottom:0px;
+        }
+    
+        .catsubMoremedianews #img{width: 250px;overflow: hidden;}
+        .catsubMoremedianews .sum{
+            font-weight: normal;
+            font-size: 1rem;
+            -webkit-line-clamp: 4;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-align: justify;
+            overflow: hidden;
+        }
+    
+        .catsub_featured img{
+            height: 150px;
+            width: auto;
+        }
+        .catsub_featured_photo img{
+            height: 160px;
+            width: auto;
+        }
+        .catsub_featured .content_title h2{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .cat_lead_all{
+            border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+        }
+        .news-cover-box{background:#f7f8fa;box-shadow: 0 -5px 4px -6px #6c757d;padding: 15px 0;}
+        .without_sub{margin-bottom:0px;padding-bottom:3px !important;border-bottom: 0px}
+        .fix-height{ height: 22px;}
+        .country_menu li a.first{font-size:25px;color: #1a73e8;}
+        .country_menu{margin-top: 12px;border-bottom: 2px solid #ccc;
+        padding-bottom: 10px}
+        .catsubMoremedianews a:hover .sum{color:#000 !important}
+        .cat_lead .sholder{
+            color:#fff !important;
+        }
+        .cat_sub_lead .sholder{
+            color:#fff !important;
+        }
+        .catsub-arrow a{border: 2px solid #000;display: block;margin-right: 0;
+        border-radius: 50%;
+        padding: 5px 6px !important;
+        font-size: 15px !important;
+        color: #333;}
+        .catsub-arrow i{font-size: 15px;margin-right: 0px;color: #000;font-weight:bold}
+        
+   /* video.html style start */
+    
+   
+   /* ✅ Make h5 text blue only when hovering the card */
+   .card:hover h5 {
+     color: #0d6efd !important; /* Bootstrap blue */
+   }
+ 
+   /* ❌ Prevent hover effect directly on h5 */
+   h5:hover {
+     color: inherit !important;
+   }
+ 
+   /* ❌ Remove any card hover movement, shadow, or animation */
+   .card:hover {
+     transform: none !important;
+     box-shadow: none !important;
+     transition: none !important;
+   }
  
