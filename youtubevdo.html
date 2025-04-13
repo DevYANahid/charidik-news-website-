@@ -146,247 +146,192 @@
         </div>
     </header>
     <!-- second header end here -->
-
-
-<!-- video start -->
- <div>
-    <h2 class="pt-3">ভিডিও </h2>
- </div>
- 
-
- 
- 
-
- 
-   
-   
- 
- 
-  
- <div class="cards p-3 m-2">
-    <!-- Row with gap -->
-    <div class="row justify-content-center g-4">
-      
-      <!-- Card 1 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
-      
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video1.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
-          </div>
-      
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                বাংলাদেশকে ধন্যবাদ জানাল যুক্তরাষ্ট্র
-            </h5>
-          </div>
-      
-        </div>
-      </div>
-     
-  
-      <!-- Card 2 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
-      
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video2.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
-          </div>
-      
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                ৩ বছরে জার্মানির নাগরিকত্ব পাওয়া নিয়ে বড় দুঃসংবাদ!
-            </h5>
-          </div>
-      
-        </div>
-      </div>
     
-  
-      <!-- Card 3 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
+    <style>
+        .video_title {
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+        .rpt_name, .entry_update {
+          font-size: 1rem;
+        }
+      </style>
+    <div class="">
+        <div class="row ">
+          <!-- Left Column (Video + Info) -->
+          <div class="col-md-8 mt-4 ms-3">
+            <h1 class="video_title">কলকাতায় ওবায়দুল কাদেরের মুখঢাকা ছবি নিয়ে যা জানা গেল</h1>
       
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video3.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
+            <!-- Reporter & Time -->
+            <div class="mb-3">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="rpt_info_section">
+                    <h5 class="rpt_name mb-0">
+                      <i class="fa-solid fa-circle-user me-2"></i>GPIT
+                    </h5>
+                    <div class="entry_update mt-1">
+                      <i class="fa-solid fa-clock me-2"></i>১৩ এপ্রিল ২০২৫, ০৯:৫২ এএম
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                  <div class="sharethis-inline-share-buttons"></div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Video -->
+            <div class="video_block mb-4">
+              <div class="ratio ratio-16x9 bg-light rounded shadow-sm">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/trnOdG-YszU?si=B8YwN3-lXEySog8e" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
       
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                কলকাতায় ওবায়দুল কাদেরের মুখঢাকা ছবি নিয়ে যা জানা গেল
-            </h5>
-          </div>
-      
+          <!-- Right Column (Tabs & List) -->
+          <!-- Right Column (Tabs) -->
+          <div class="col-md-3 mt-4">
+            <div class="home_page_right" style="background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div class="tab_block_one" style="padding: 15px;">
+                    <div class="tab_bar_block_new">
+                        <ul class="list-inline mb-3" id="newsTabs" style="display: flex; border-bottom: 1px solid #eee; padding: 0;">
+                            <li class="active" style="padding: 8px 15px; cursor: pointer;" data-tab="latest">সর্বশেষ</li>
+                          
+                        </ul>
+                    </div>
+
+                    <!-- Latest News -->
+                    <div class="list_display_block1" id="latest" style="display: block;">
+                        <div class="sub2-lead-content" style="position: relative; padding: 8px 0; border-bottom: 1px dashed #eee;">
+                            <div class="d-flex">
+                                <div class="flex-fill">
+                                    <h4 class="title" style="font-size: 15px; margin: 0; line-height: 1.4;">
+                                        <i class="fas fa-angle-right" style="color: #007bff; margin-right: 5px;"></i>
+                                        <img src="./assets/image/chain.webp" alt="">
+                                        চীন এবার মার্কিন পণ্যে ১২৫% শুল্ক আরোপ করল
+                                    </h4>
+                                </div>
+                            </div>
+                           
+                            <a href="https://www.kalbela.com/dainikshiksha/admission/178481" class="link" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" aria-label="কৃষিগুচ্ছে ভর্তি পরীক্ষা শনিবার"></a>
+                        </div>
+
+                        <div class="sub2-lead-content" style="position: relative; padding: 8px 0; border-bottom: 1px dashed #eee;">
+                            <div class="d-flex">
+                                <div class="flex-fill">
+                                    <h4 class="title" style="font-size: 15px; margin: 0; line-height: 1.4;">
+                                        <i class="fas fa-angle-right" style="color: #007bff; margin-right: 5px;"></i>
+                                        <img src="./assets/image/model1.webp" alt="">
+                                        মডেল মেঘনাকে নিয়ে যা জানাল ডিএমপি
+                                    </h4>
+                                </div>
+                            </div>
+                           
+                            <a href="https://www.kalbela.com/dainikshiksha/admission/178481" class="link" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" aria-label="কৃষিগুচ্ছে ভর্তি পরীক্ষা শনিবার"></a>
+                        </div>
+                        <div class="sub2-lead-content" style="position: relative; padding: 8px 0; border-bottom: 1px dashed #eee;">
+                            <div class="d-flex">
+                                <div class="flex-fill">
+                                    <h4 class="title" style="font-size: 15px; margin: 0; line-height: 1.4;">
+                                        <i class="fas fa-angle-right" style="color: #007bff; margin-right: 5px;"></i>
+                                        <img src="./assets/image/tramp.webp" alt="">
+                                        যুক্তরাষ্ট্র-ইসরায়েল মিলে কী ঘটাতে চলেছে
+                                    </h4>
+                                </div>
+                            </div>
+                           
+                            <a href="https://www.kalbela.com/dainikshiksha/admission/178481" class="link" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" aria-label="কৃষিগুচ্ছে ভর্তি পরীক্ষা শনিবার"></a>
+                        </div>
+                        <div class="sub2-lead-content" style="position: relative; padding: 8px 0; border-bottom: 1px dashed #eee;">
+                            <div class="d-flex">
+                                <div class="flex-fill">
+                                    <h4 class="title" style="font-size: 15px; margin: 0; line-height: 1.4;">
+                                        <i class="fas fa-angle-right" style="color: #007bff; margin-right: 5px;"></i>
+                                        <img src="./assets/image/ambappi.webp" alt="">
+                                        এমবাপ্পের বকেয়া বেতন ইস্যুতে বড় বিপদে পিএসজি!
+                                    </h4>
+                                </div>
+                            </div>
+                           
+                            <a href="https://www.kalbela.com/dainikshiksha/admission/178481" class="link" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" aria-label="কৃষিগুচ্ছে ভর্তি পরীক্ষা শনিবার"></a>
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
         </div>
-      </div>
-    
-  
-      <!-- Card 4 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
-      
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video4.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
-          </div>
-      
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                ডিসেম্বরে নির্বাচনের লক্ষ্যে দ্রুত যে পদক্ষেপ নিতে বললেন প্রধান উপদেষ্টা
-            </h5>
-          </div>
-      
-        </div>
-      </div>
-      
-    </div>
-  </div>
- 
-  
-   <div class="cards p-3 m-2">
-     <!-- Row with gap -->
-     <div class="row justify-content-center g-4">
-       
-       <!-- Card 1 -->
-       <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
-      
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video5.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
-          </div>
-      
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                যেসব আন্তর্জাতিক গণমাধ্যমে ‘মার্চ ফর গাজা’ কর্মসূচি
-            </h5>
-          </div>
-      
         </div>
       </div>
 
-     
-   
-       <!-- Card 2 -->
-       <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
-      
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video6.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
-          </div>
-      
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                ফিলিস্তিনের দুর্দিনেও ওআইসি কেন নিস্ক্রিয়
-            </h5>
-          </div>
-      
-        </div>
-      </div>
 
 
-       
-   
-       <!-- Card 3 -->
-       <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <div class="card" style="width: 20rem;">
-      
-          <!-- Image Wrapper with Centered Play Icon -->
-          <div class="position-relative">
-            <a href="./youtubevdo.html">
-              <img src="./assets/image/video7.webp" class="card-img-top" alt="...">
-              <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-                 style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-            </a>
-          </div>
-      
-          <!-- Card Content -->
-          <div class="container mt-4">
-            <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-                আসছে নতুন রাজনৈতিক দল
-            </h5>
-          </div>
-      
-        </div>
-      </div>
-       
-   
-       <!-- Card 4 -->
-   <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-    <div class="card" style="width: 20rem;">
-  
-      <!-- Image Wrapper with Centered Play Icon -->
-      <div class="position-relative">
-        <a href="./youtubevdo.html">
-          <img src="./assets/image/video8.webp" class="card-img-top" alt="...">
-          <i class="fa-solid fa-play-circle fa-3x text-white position-absolute top-50 start-50 translate-middle"
-             style="text-shadow: 0 0 5px rgba(0,0,0,0.7); pointer-events: none;"></i>
-        </a>
-      </div>
-  
-      <!-- Card Content -->
-      <div class="container mt-4">
-        <h5 class="fs-5 fw-bold pt-2 pb-2 pt-3 text-black" style="transition: color 0.3s ease;">
-          ১২ এপ্রিলের বিক্ষোভ নিয়ে শায়খ আহমাদুল্লাহর স্ট্যাটাস
-        </h5>
-      </div>
-  
-    </div>
-  </div>
-  
-   
-  
+      <!-- Font Awesome CSS (Required) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <div class="text-center mt-5 p-5 clearfix">
-    <a href="#"
-       id="find_more"
-       data-page="1"
-       class="btn border border-primary text-primary fw-bold rounded px-4 fs-6">
-      আরও
-    </a>
-  </div>
- 
-  
-  
-   
- 
- 
-   
+<!-- Social Icons -->
+<div class="d-flex gap-3 social-icons">
+  <!-- Facebook -->
+  <a href="#" class="social-link" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
 
+  <!-- LinkedIn -->
+  <a href="#" class="social-link" title="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="#" class="social-link" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Twitter -->
+  <a href="#" class="social-link" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <!-- Messenger -->
+  <a href="#" class="social-link" title="Messenger">
+    <i class="fab fa-facebook-messenger"></i>
+  </a>
+</div>
+
+<!-- CSS for Hover Effects -->
+<style>
+  .social-icons i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+
+  .social-link {
+    color: #555;
+  }
+
+  .social-link:hover i.fa-facebook-f {
+    color: #1877f2;
+  }
+
+  .social-link:hover i.fa-linkedin-in {
+    color: #0a66c2;
+  }
+
+  .social-link:hover i.fa-whatsapp {
+    color: #25d366;
+  }
+
+  .social-link:hover i.fa-twitter {
+    color: #1da1f2;
+  }
+
+  .social-link:hover i.fa-facebook-messenger {
+    color: #0084ff;
+  }
+</style>
+
+      
+      
       <!-- footer start here  -->
 
 
