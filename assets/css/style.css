@@ -10595,6 +10595,23 @@ h6{ font-size: 12px !important; line-height: 16px !important; font-weight: bolde
         color: #333;}
         .catsub-arrow i{font-size: 15px;margin-right: 0px;color: #000;font-weight:bold}
         
-   /* মধ্যপ্রাচ্য style start */
-   
+   /* video.html style start */
     
+   
+   /* ✅ Make h5 text blue only when hovering the card */
+   .card:hover h5 {
+     color: #0d6efd !important; /* Bootstrap blue */
+   }
+ 
+   /* ❌ Prevent hover effect directly on h5 */
+   h5:hover {
+     color: inherit !important;
+   }
+ 
+   /* ❌ Remove any card hover movement, shadow, or animation */
+   .card:hover {
+     transform: none !important;
+     box-shadow: none !important;
+     transition: none !important;
+   }
+ 
