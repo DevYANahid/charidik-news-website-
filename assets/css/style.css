@@ -10674,3 +10674,27 @@ h6{ font-size: 12px !important; line-height: 16px !important; font-weight: bolde
   font-size: 2rem; /* Adjust icon size */
   text-decoration: none;
 }
+
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.youtube-link-wrapper {
+  padding: 20px 0;
+}
+
+.solid-divider {
+  width: 100vw;         /* Full viewport width */
+  height: 1px;          /* Line height */
+  background-color: #ccc; /* Solid gray color (change if you want) */
+  margin: 30px 0;
+}
+
+
+  
