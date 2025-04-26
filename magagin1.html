@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Flipbook</title>
+  
+  <!-- Turn.js CSS (for flipbook effect) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/turn.js@4.1.0/dist/turn.min.css">
+
+  <!-- PDF.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .flipbook-container {
+      width: 80%;
+      height: 600px;
+      margin: 50px;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+
+    .flipbook {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .page {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+    }
+
+    .page canvas {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flipbook-container">
+    <div id="flipbook" class="flipbook">
+      <!-- Pages will be dynamically added here -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/turn.js@4.1.0/dist/turn.min.js"></script>
+  
+  <script>
+    // URL of the PDF you want to display
+    const pdfUrl = 'https://www.pdffiller.com/jsfiller-desk14/?traceparent=00-e4ff45e3f2bd5e19f27a4e0dfe44b801-2b667cfb5978479e-00&flat_pdf_quality=high&requestHash=f8845b49cf673a75deb6b03cc98e90ebef40fb9f2895edc97ba23195a9e0571b&projectId=1828034475&richTextFormatting=true&jsf-page-rearrange-v2=true&jsf-redesign-full=true&jsf-fake-edit-embedded=true&isSkipEditorLoadFrequency=true&jsf-probability-70=true&jsf-socket-io=false&jsf-simplified-modes-iteration-1=true&jsf-offline-mode=false&jsf-fake-edit-stream-editing=false&acc-share-button-in-editor=false&routeId=d57dbf1176c9a97019c47a9820b04edf#c8a6f7ae9a044146a0e2af4f30ea1770'; // Replace this URL with your PDF file URL
+
+    // Function to load PDF and convert it into pages
+    function loadPdf(pdfUrl) {
+      const container = document.getElementById('flipbook');
+      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+
+      loadingTask.promise.then(function (pdf) {
+        let pagesPromises = [];
+
+        // Loop through each page of the PDF
+        for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+          pagesPromises.push(
+            pdf.getPage(pageNumber).then(function (page) {
+              const canvas = document.createElement('canvas');
+              const context = canvas.getContext('2d');
+              const viewport = page.getViewport({ scale: 1.5 });
+              canvas.width = viewport.width;
+              canvas.height = viewport.height;
+
+              // Render the page to the canvas
+              page.render({
+                canvasContext: context,
+                viewport: viewport
+              });
+
+              // Add the canvas as a new page in the flipbook
+              const pageDiv = document.createElement('div');
+              pageDiv.classList.add('page');
+              pageDiv.appendChild(canvas);
+              container.appendChild(pageDiv);
+            })
+          );
+        }
+
+        // After loading all pages, initialize the flipbook
+        Promise.all(pagesPromises).then(function () {
+          $('#flipbook').turn({
+            width: 800,
+            height: 600,
+            autoCenter: true,
+            page: 1
+          });
+        });
+      });
+    }
+
+    // Load the PDF when the page is ready
+    loadPdf(pdfUrl);
+  </script>
+  
+</body>
+</html>
