@@ -384,3 +384,41 @@
      
 
 })(jQuery);
+// homemenue click kore option asbe 
+
+
+
+
+
+
+
+    // Mobile toggle
+    document.querySelector(".mobile-toggle").addEventListener("click", function () {
+        document.querySelector(".dlabnav").classList.toggle("active");
+    });
+
+    // Submenu toggle
+    document.querySelectorAll(".toggle-submenu").forEach(function (el) {
+        el.addEventListener("click", function () {
+            document.querySelectorAll(".has-submenu").forEach(li => {
+                if (li !== el.parentElement) li.classList.remove("active");
+            });
+            el.parentElement.classList.toggle("active");
+        });
+    });
+
+    // Inner submenu toggle
+    document.querySelectorAll(".toggle-inner-submenu").forEach(function (el) {
+        el.addEventListener("click", function () {
+            document.querySelectorAll(".has-inner-submenu").forEach(li => {
+                if (li !== el.parentElement) li.classList.remove("active");
+            });
+            el.parentElement.classList.toggle("active");
+        });
+    });
+
+
+
+
+
+

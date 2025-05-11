@@ -11836,7 +11836,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   @media only screen and (max-width: 767px) {
     .dlabnav {
       width: 18rem; } }
+      .dlabnav-scroll{
+        height: 600px;
+    overflow-y: auto;
+      } 
   .dlabnav .dlabnav-scroll {
+    
     position: relative;
     height: 100%; }
   @media only screen and (max-width: 1400px) {
@@ -30918,4 +30923,52 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     background-color: transparent; }
     [data-theme-version="dark"] .footer .copyright a {
       color: #fff; }
+/* homemenue click korle 2ta submenue asbe */
 
+    .dlabnav {
+        position: relative;
+        max-height: 100vh;
+        overflow-y: auto;
+        background: #fff;
+        overflow-x: hidden
+    }
+
+    .dlabnav-scroll {
+        padding: 10px;
+    }
+
+    .submenu,
+    .inner-submenu {
+        display: none;
+    }
+
+    .has-submenu.active > .submenu,
+    .has-inner-submenu.active > .inner-submenu {
+        display: block;
+    }
+
+    /* Mobile Responsive */
+    .mobile-toggle {
+        display: none;
+        background: #000;
+        color: #fff;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .mobile-toggle {
+            display: block;
+        }
+
+        .dlabnav-scroll {
+            display: none;
+        }
+
+        .dlabnav.active .dlabnav-scroll {
+            display: block;
+        }
+    }
