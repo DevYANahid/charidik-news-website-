@@ -30972,3 +30972,13 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             display: block;
         }
     }
+/* Header container stile */
+.menu {
+  display: flex;
+  gap: 20px; /* optional spacing between items */
+  list-style: none; /* removes default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+
